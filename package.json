@@ -1,0 +1,26 @@
+{
+  "name": "stackmern",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm-run-all -p -l start:*",
+    "start:server": "cd server && yarn start",
+    "start:client": "cd client && yarn start",
+    "install:client": "cd client && npm install",
+    "install:server": "cd server && npm install",
+    "postinstall": "run-p install:*"
+  },
+  "author": "Agnieszka Matyja",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "0.18.0",
+    "helmet": "3.18.0",
+    "npm-run-all": "4.1.5",
+    "react-html-parser": "2.0.2",
+    "react-redux": "7.0.1",
+    "redux": "4.0.1",
+    "redux-thunk": "2.3.0"
+  }
+}
